@@ -32,7 +32,7 @@
       <option value="division">
         División
       </option>
-      
+
     </select>
 
     <button @click="calcular">
@@ -64,8 +64,8 @@ async function calcular() {
 
   try {
 
-    const respuesta = await fetch(
-      'http://localhost:8000/api.php',
+      const respuesta = await fetch(
+       'https://calculadora-briggith.infinityfreeapp.com/api.php',
       {
         method: 'POST',
         body: datos
